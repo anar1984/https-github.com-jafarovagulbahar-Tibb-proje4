@@ -161,7 +161,6 @@
               <th>Cinsiyyət</th>
               <th>Modul adı</th>
                <th>Delete</th>
-
             </tr>
           </thead>
           <tbody id="DoctorDataTable">
@@ -191,6 +190,122 @@
 
 <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
+<!-- Pasient Add Modal -->
+<div class="modal fade" id="pasientAddModal" tabindex="-1" role="dialog" aria-labelledby="pasientAddModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pasientAddModalLabel">Yeni Pasient Əlavə Et!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body patinetAddModalBody">
+        <div class="row">
+          <div class="form-group col-md-4"> 
+           <label qlang="">Patient ID</label> 
+           <input class="form-control  apd-form-input" type="text" id="patientId" name="patientName" placeholder=" "> 
+          </div>
+
+           <div class="form-group col-md-4"> 
+           <label qlang="">Param 1</label> 
+           <input class="form-control  apd-form-input" type="text" id="" name="" placeholder=" "> 
+          </div>
+
+           <div class="form-group col-md-4"> 
+           <label qlang="">Param 2</label> 
+           <input class="form-control  apd-form-input" type="text" id="" name="" placeholder=" "> 
+          </div>
+
+           <div class="form-group col-md-4"> 
+           <label for="example-date-input">Doğum Tarixi</label>
+              <input class="form-control apd-form-input" type="date" value="date" id="example-date-input">
+          </div>
+
+           <div class="form-group col-md-4 patientSelectBox"> 
+           <label qlang="">Ailə Vəziyyəti</label> 
+            <select class="noSearch selectStyle" id="family">
+             <option class="active"></option>
+             <option>Subay</option>
+             <option>Evli</option>
+             <option>Dul</option>
+           </select>
+          </div>
+
+           <div class="form-group col-md-4 patientSelectBox"> 
+           <label qlang="">İxtisas</label> 
+           <select class="noSearch selectStyle" id="prof"> 
+             <option class="active"></option>
+             <option>Müəllim</option>
+             <option>Həkim</option>
+             <option>Aktyor (Aktrisa)</option>
+             <option>Diktor</option>
+             <option>Çağırı mərkəzi</option>
+             <option>digər</option>
+
+           </select>
+          </div>
+
+           <div class="form-group col-md-4"> 
+           <label qlang="">Occupation (Other)</label> 
+           <input class="form-control apd-form-input" disabled type="text" id="" name="" placeholder=" "> 
+          </div>
+
+           <div class="form-group col-md-4 patientSelectBox"> 
+           <label qlang="">Təhsil</label> 
+            <select class="noSearch selectStyle" id="edu">
+             <option class="active"></option>
+             <option>Akademik</option>
+             <option>Orta</option>
+             <option>Natamam Ali</option>
+             <option>Ali</option>
+           </select>
+          </div>
+          
+           <div class="form-group col-md-4 patientSelectBox"> 
+           <label qlang="">Cinsiyyət</label> 
+            <select class="noSearch selectStyle" id="gander">
+             <option class="active"></option>
+             <option>Qadın</option>
+             <option>Kişi</option>
+             <option>Digər</option>
+           </select>
+          </div>
+
+            <div class="form-group col-md-4 patientSelectBox"> 
+           <label qlang="">Qan qrupu</label> 
+         <select class="noSearch selectStyle" id="bloodGroup">
+             <option class="active"></option>
+             <option>0 (Ⅰ)</option>
+             <option>A ( Ⅱ )</option>
+             <option>B ( Ⅲ )</option>
+             <option>AB (Ⅳ )</option>
+           </select>
+          </div>
+
+           <div class="form-group col-md-4 patientSelectBox"> 
+           <label qlang="">RH faktor</label> 
+            <select class="noSearch selectStyle" id="rhFactor">
+             <option class="active"></option>
+             <option> - </option>
+             <option> + </option>
+           </select>
+          </div>
+
+           <div class="form-group col-md-4 patientSelectBox" id="city">  
+           <label qlang="">Şəhər</label> 
+            <input class="form-control apd-form-input" type="text" id="patientName" name="patientName" placeholder=" "> 
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="patinetList()">Əlavə Et</button>
+        <button type="button" class="btn btn-light">Bağla</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
